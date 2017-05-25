@@ -19,3 +19,4 @@ module.exports = message => {
     cmd.run(client, message, args);
   }
 };
+//When a command has been executed
