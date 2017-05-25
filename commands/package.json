@@ -1,0 +1,28 @@
+{
+  "name": "selfbot-by-wesselgame",
+  "version": "1.0.0",
+  "description": "A easy to use selfbot by wesselgame!(to install all modules type: npm i -S snekfetch | npm i -S util | npm i -S | npm i -S google | npm i -S moment | npm i -S hydrabolt/discord.js) ",
+  "main": "core.js",
+  "scripts": {
+    "test": "node core.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wesselgame/discordJS-Selfbot.git"
+  },
+  "keywords": [
+    "DiscordJS",
+    "SelfBot",
+    "Node",
+    "JS",
+    "javascript",
+    "wesselgame",
+    "Wesselgame"
+  ],
+  "author": "Wessel Tip",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wesselgame/discordJS-Selfbot/issues"
+  },
+  "homepage": "https://github.com/wesselgame/discordJS-Selfbot#readme"
+}
