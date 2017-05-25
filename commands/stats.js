@@ -10,7 +10,8 @@ exports.run = function(client, message, args) {
   .setAuthor(`${client.user.tag} Status`, client.user.displayAvatarURL)
   .setColor(`BLURPLE`)
   .setFooter(`Selfbot by ${config.devtag}`, client.user.displayAvatarURL)
-  .setDescription(`**MEM usage:** ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)} MB /${os.freemem().toFixed(2)} KB\n**Uptime since last restart:** ${moment(client.uptime).format(`HH [Hour(s)] | mm [Minute(s)]`)}\n**OS version:** ${os.platform()}(${os.release()})\n**Total users:** ${client.users.size.toLocaleString()}\n**Total channels:** ${client.channels.size.toLocaleString()}(${client.channels.filter(channel => channel.type === 'text').size} Text | ${client.channels.filter(channel => channel.type === 'voice').size} Voice)\n**Total guilds:** ${client.guilds.size.toLocaleString()}\n**Discord.JS** Version: ${Discord.version}\n**NodeJS/NPM version:** ${process.version}`)
+  .addField(`**Bot stats:`, `[**Selfbot version:** V1.2.0\n**Support server:** https://discord.gg/vZceXPx\n**Selfbot source:** https://github.com/wesselgame/discordJS-Selfbot](https://github.com/wesselgame/discordJS-Selfbot)`)
+  .addField(`**General stats:**`, `[**MEM usage:** ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)} MB /${os.freemem().toFixed(2)} KB\n**Uptime since last restart:** ${moment(client.uptime).format(`HH [Hour(s)] | mm [Minute(s)]`)}\n**OS version:** ${os.platform()}(${os.release()})\n**Total users:** ${client.users.size.toLocaleString()}\n**Total channels:** ${client.channels.size.toLocaleString()}(${client.channels.filter(channel => channel.type === 'text').size} Text | ${client.channels.filter(channel => channel.type === 'voice').size} Voice)\n**Total guilds:** ${client.guilds.size.toLocaleString()}\n**Discord.JS** Version: ${Discord.version}\n**NodeJS/NPM version:** ${process.version}](https://github.com/wesselgame/discordJS-Selfbot)`)
   message.edit({embed})
 };
 
