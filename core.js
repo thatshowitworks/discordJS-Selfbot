@@ -4,17 +4,13 @@
 //PROJECT VERSION: 1.0.0                                                                                                   //
 //PROJECT CREATED: 21-5-2017(21th of may 2017)                                                                             //
 //LANGAUGE | LIBRARY:JavaScript | Discord.JS                                                                               //
-//ALL NPM MODULES: Discord.js | moment | fs | child_process | snekfetch | util | os                                        //
+//ALL NPM MODULES: Discord.js | moment | fs | child_process | snekfetch | util | os | google                               //
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const moment = require('moment');
 const chalk = require('chalk');
 const fs = require('fs');
-const snekfetch = require('snekfetch');
-const os = require('os');
-const util = require('util');
-const exec = require("child_process").exec;
 let config = JSON.parse(fs.readFileSync('./config.json', 'utf8'));
 require('./util/eventLoader')(client);
 client.login(config.token);
@@ -58,3 +54,7 @@ client.elevation = message => {
   let permlvl = 0;
   return permlvl;
 };
+//Remove the `/*` & `*/` if you want to enable dubugging
+/* client.on('debug', debug => {
+   log(debug)
+ });*/
