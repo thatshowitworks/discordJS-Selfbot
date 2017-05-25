@@ -5,3 +5,4 @@ module.exports = client => {
   client.on('disconnect', () => reqEvent('disconnect')(client));
   client.on('message', reqEvent('message'));
 };
+//All events in the /Events/ folder
